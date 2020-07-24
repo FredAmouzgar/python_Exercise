@@ -1,1 +1,1 @@
-# 46 Simple Python Exercise
+# 46 Simple Python Exercises
