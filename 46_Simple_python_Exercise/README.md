@@ -21,4 +21,4 @@ Everyone is welcome to contribute and suggest new methods. When necessary please
 
 
 ## Reference
-The original collection of exercises was created by [Torbjörn Lager](torbjorn.lager@ling.gu.se) and was available [here](http://www.ling.gu.se/~lager/python_exercises.html), but now removed. I downloaded its pdf from another amazing [GitHUB repository](https://github.com/arsho/46-Simple-Python-Exercises-Solutions.git) by @arsho.
+The original collection of exercises was created by [Torbjörn Lager](torbjorn.lager@ling.gu.se) and was available [here](http://www.ling.gu.se/~lager/python_exercises.html), but now removed. I downloaded its pdf from another amazing [GitHUB repository](https://github.com/arsho/46-Simple-Python-Exercises-Solutions.git) by @arsho .
