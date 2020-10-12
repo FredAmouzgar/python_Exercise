@@ -2,4 +2,4 @@
 
 Add this code to the first cell of your Jupyter notebook.
 
-{{ include_source_code('https://raw.githubusercontent.com/FredAmouzgar/python_Exercise/master/Colab_setup/sample_colab_cell.py', language='python') }}
+%load https://raw.githubusercontent.com/FredAmouzgar/python_Exercise/master/Colab_setup/sample_colab_cell.py
