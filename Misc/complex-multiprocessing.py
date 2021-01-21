@@ -54,7 +54,7 @@ class Worker(multiprocessing.Process):
         reward: int = 0
         done = False
         while not done:
-            self.env.render()
+            # self.env.render()
             s = tf.convert_to_tensor(s.reshape(1, self.state_size), dtype=tf.float32)
             logits = self.model(s)
             action_probs = tfp.distributions.Categorical(probs=logits)
@@ -111,7 +111,15 @@ def multi(w_no=5, episodes=250):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    import sys
+    if len(sys.argv) < 3:
+        print("##### \tEXECUTION \t######\n##### $ python {} Worker_no Episode_no".format(sys.argv[0]))
+        w_no = 3
+        episodes = 2
+    elif len(sys.argv) == 3:
+        w_no = int(sys.argv[1])
+        episodes = int(sys.argv[2])
     stime = time()
-    multi(w_no=20, episodes=3)          # Multi  = 60.331
+    multi(w_no=w_no, episodes=episodes)          # Multi  = 60.331
     # single(episodes=2)        # Single = 71.277
     print(time() - stime)
